@@ -31,7 +31,12 @@ class _MyAppState extends State<MyApp> {
               fontSize: 50,
             ),
           ),
-        )),
+        ),
+        
+        ),
+        bottomNavigationBar: BottomNavigationBar(items: [BottomNavigationBarItem(
+          icon: Icon(Icons.battery_saver_sharp)
+        )],),
         floatingActionButton: FloatingActionButton(onPressed: (() {
           x++;
           setState(() {});
