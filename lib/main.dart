@@ -34,7 +34,9 @@ class _MyAppState extends State<MyApp> {
         ),
         
         ),
-        bottomNavigationBar: BottomNavigationBar(items: [BottomNavigationBarItem(
+        bottomNavigationBar: BottomNavigationBar(items: 
+        const [
+          BottomNavigationBarItem(
           icon: Icon(Icons.battery_saver_sharp)
         )],),
         floatingActionButton: FloatingActionButton(onPressed: (() {
