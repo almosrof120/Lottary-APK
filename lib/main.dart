@@ -1,45 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const MyApp());
+  
+  runApp(const Home_Page());
 }
 
-int x = 0;
+// ignore: camel_case_types
+class Home_Page extends StatelessWidget {
+  const Home_Page({super.key});
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    print('rebuild');
-    return MaterialApp(
+    return  MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.blue,
-            title: const Center(child: Text('Lottery App')),
+        appBar: AppBar(
+          title: const Center(
+            child: Text("Lottery App",style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),),
           ),
-          body: SafeArea(
-            child: Center(
-              child: Text(
-                x.toString(),
-                style: const TextStyle(
-                  fontSize: 50,
-                ),
-              ),
-            ),
-          ),
-          floatingActionButton: FloatingActionButton(
-              onPressed: (() {
-                x++;
-                setState(() {});
-                print(x.toString());
-              }),
-              child: const Icon(Icons.add))),
+          
+          backgroundColor: Colors.blueAccent,
+          elevation: 0,
+        ),
+      ),
     );
   }
 }
