@@ -19,32 +19,27 @@ class _MyAppState extends State<MyApp> {
     print('rebuild');
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          title: const Center(child: Text('Lottery App')),
-        ),
-        body: SafeArea(
+          appBar: AppBar(
+            backgroundColor: Colors.blue,
+            title: const Center(child: Text('Lottery App')),
+          ),
+          body: SafeArea(
             child: Center(
-          child: Text(
-            x.toString(),
-            style: const TextStyle(
-              fontSize: 50,
+              child: Text(
+                x.toString(),
+                style: const TextStyle(
+                  fontSize: 50,
+                ),
+              ),
             ),
           ),
-        ),
-        
-        ),
-        bottomNavigationBar: BottomNavigationBar(items: 
-        const [
-          BottomNavigationBarItem(
-          icon: Icon(Icons.battery_saver_sharp)
-        )],),
-        floatingActionButton: FloatingActionButton(onPressed: (() {
-          x++;
-          setState(() {});
-          print(x.toString());
-        })),
-      ),
+          floatingActionButton: FloatingActionButton(
+              onPressed: (() {
+                x++;
+                setState(() {});
+                print(x.toString());
+              }),
+              child: const Icon(Icons.add))),
     );
   }
 }
