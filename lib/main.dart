@@ -14,6 +14,8 @@ class Home_Page extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
+
+            
             child: Text("Lottery App",style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
