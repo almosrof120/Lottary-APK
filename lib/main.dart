@@ -22,7 +22,6 @@ class Home_Page extends StatelessWidget {
               color: Colors.white,
             ),),
           ),
-          
           backgroundColor: Colors.blueAccent,
           elevation: 0,
         ),
